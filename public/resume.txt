@@ -14,9 +14,9 @@ Database: PostgreSQL, MongoDB, MySQL
 Tools: Git, Docker, AWS, Postman
 
 Projects
-E-Commerce Platform — Next.js, Node.js, MongoDB
-RESTful API Service — Python, FastAPI, PostgreSQL, Docker
-Data Scraper & Dashboard — Python, BeautifulSoup, React
+E-Commerce Platform — Next.js, React, TypeScript. Storefront demo with cart and on-page checkout.
+RESTful API Service — Next.js, React, TypeScript. API console demo that shows a JSON response.
+Data Scraper & Dashboard — Next.js, React, TypeScript. Dashboard demo with sample results and search.
 
 Contact
 Email: mshayankhan8688@gmail.com

@@ -5,9 +5,9 @@ import { useState } from "react";
 type Item = { id: number; name: string; status: "open" | "done" };
 
 const starter: Item[] = [
-  { id: 1, name: "Design the catalog", status: "done" },
-  { id: 2, name: "Write the API routes", status: "open" },
-  { id: 3, name: "Connect PostgreSQL", status: "open" },
+  { id: 1, name: "Draft the brief", status: "done" },
+  { id: 2, name: "Review the layout", status: "open" },
+  { id: 3, name: "Publish the notes", status: "open" },
 ];
 
 export function ApiDemo() {

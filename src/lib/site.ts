@@ -15,28 +15,31 @@ export const projects = [
   {
     title: "E-Commerce Platform",
     description:
-      "A full-stack storefront for browsing products, managing a cart, and checking out, with a Node.js API and MongoDB for catalog data.",
-    tech: ["Next.js", "Node.js", "MongoDB"],
+      "A Next.js storefront demo. Shoppers can browse products, add them to a cart, and complete checkout on the page.",
+    tech: ["Next.js", "React", "TypeScript"],
     gradient: "from-teal-500 via-cyan-700 to-slate-900",
-    githubUrl: "https://github.com/mshayankhan8688-web",
+    githubUrl:
+      "https://github.com/mshayankhan8688-web/muhammad-shayan-khan-portfolio/blob/main/src/components/demos/StoreDemo.tsx",
     demoUrl: `${basePath}/demos/store`,
   },
   {
     title: "RESTful API Service",
     description:
-      "A Python API for creating and querying resources, with FastAPI routes, PostgreSQL storage, and a Docker setup for local runs.",
-    tech: ["Python", "FastAPI", "PostgreSQL", "Docker"],
+      "A Next.js API console demo. You can send a request and read the JSON response in the browser.",
+    tech: ["Next.js", "React", "TypeScript"],
     gradient: "from-amber-400 via-orange-600 to-stone-900",
-    githubUrl: "https://github.com/mshayankhan8688-web",
+    githubUrl:
+      "https://github.com/mshayankhan8688-web/muhammad-shayan-khan-portfolio/blob/main/src/components/demos/ApiDemo.tsx",
     demoUrl: `${basePath}/demos/api`,
   },
   {
     title: "Data Scraper & Dashboard",
     description:
-      "A Python utility that collects public page data with BeautifulSoup and presents the results in a React dashboard.",
-    tech: ["Python", "BeautifulSoup", "React"],
+      "A Next.js dashboard demo with sample page results, search, and a simple bar view.",
+    tech: ["Next.js", "React", "TypeScript"],
     gradient: "from-indigo-500 via-blue-700 to-slate-900",
-    githubUrl: "https://github.com/mshayankhan8688-web",
+    githubUrl:
+      "https://github.com/mshayankhan8688-web/muhammad-shayan-khan-portfolio/blob/main/src/components/demos/DashboardDemo.tsx",
     demoUrl: `${basePath}/demos/dashboard`,
   },
 ] as const;

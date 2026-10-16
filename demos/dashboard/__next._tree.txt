@@ -1,7 +1,7 @@
-:HL["/muhammad-shayan-khan-portfolio/_next/static/chunks/0uhl114qz5lf5.css","style"]
+:HL["/muhammad-shayan-khan-portfolio/_next/static/chunks/41m84a4636_sb.css","style"]
 :HL["/muhammad-shayan-khan-portfolio/_next/static/media/03bda585a99c6450-s.p.32sris142tqlb.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/muhammad-shayan-khan-portfolio/_next/static/media/1b99372b3eaef0c8-s.p.1gsd1jahc5dg_.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":"dashboard","h":96,"c":"$Q3"}]]
 1:[["children",{"s":"demos","h":96,"c":"$Q2"}]]
-0:{"b":"JDi3UNaNgnUYDk_csZxZW","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"v2Vw0odv5QDzSKWRNtcEQ","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

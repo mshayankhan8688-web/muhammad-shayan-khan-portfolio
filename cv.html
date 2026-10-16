@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Muhammad Shayan Khan — CV</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        color: #1c2422;
+        font-family: Calibri, "Segoe UI", sans-serif;
+      }
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        padding: 14mm 14mm 12mm;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: flex-end;
+        border-bottom: 2.5px solid #0f6e64;
+        padding-bottom: 12px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 28px;
+        line-height: 1;
+        letter-spacing: -0.03em;
+        font-weight: 700;
+      }
+      .role {
+        margin: 7px 0 0;
+        color: #0f6e64;
+        font-size: 13.5px;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+      .contact {
+        margin: 0;
+        text-align: right;
+        font-size: 11.5px;
+        line-height: 1.55;
+        color: #24312e;
+      }
+      .contact a {
+        color: inherit;
+        text-decoration: none;
+      }
+      h2 {
+        margin: 18px 0 8px;
+        padding-bottom: 3px;
+        border-bottom: 1px solid #d7e4e1;
+        color: #0f6e64;
+        font-size: 12px;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+      .summary {
+        margin: 0;
+        font-size: 13px;
+        line-height: 1.5;
+      }
+      .edu {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        align-items: baseline;
+        margin-top: 8px;
+      }
+      .edu h3 {
+        margin: 0;
+        font-size: 14px;
+      }
+      .edu .where {
+        margin: 2px 0 0;
+        font-size: 12.5px;
+      }
+      .edu .when {
+        margin: 0;
+        color: #0f6e64;
+        font-size: 12px;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+      .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px 18px;
+      }
+      .skill {
+        margin: 0;
+        font-size: 12.5px;
+        line-height: 1.45;
+      }
+      .skill strong {
+        display: block;
+        margin-bottom: 1px;
+        font-size: 12px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #1c2422;
+      }
+      .project {
+        margin-top: 11px;
+      }
+      .project-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        align-items: baseline;
+      }
+      .project h3 {
+        margin: 0;
+        font-size: 14.5px;
+        font-weight: 700;
+      }
+      .kind {
+        color: #0f6e64;
+        font-size: 11.5px;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+      .tech {
+        margin: 2px 0 0;
+        color: #4a5854;
+        font-size: 12px;
+      }
+      ul {
+        margin: 4px 0 0;
+        padding-left: 16px;
+      }
+      li {
+        margin: 1px 0;
+        font-size: 12.5px;
+        line-height: 1.4;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header>
+        <div>
+          <h1>Muhammad Shayan Khan</h1>
+          <p class="role">Full Stack Developer | Python Enthusiast</p>
+        </div>
+        <p class="contact">
+          <a href="mailto:mshayankhan8688@gmail.com">mshayankhan8688@gmail.com</a><br />
+          <a href="https://www.linkedin.com/in/muhammad-shayan-khan-979317393">linkedin.com/in/muhammad-shayan-khan-979317393</a><br />
+          <a href="https://github.com/mshayankhan8688-web">github.com/mshayankhan8688-web</a>
+        </p>
+      </header>
+
+      <h2>Profile</h2>
+      <p class="summary">
+        Full stack developer focused on web products. I build interfaces with React and Next.js,
+        and backends with Python (Django and FastAPI) and Node.js. I work across the stack, from
+        the page a user sees through to the API, database, and the tools used to ship it.
+      </p>
+
+      <h2>Education</h2>
+      <div class="edu">
+        <div>
+          <h3>Bachelor's Degree</h3>
+          <p class="where">University of Management and Technology (UMT), Lahore</p>
+        </div>
+        <p class="when">2022 – 2026</p>
+      </div>
+      <div class="edu">
+        <div>
+          <h3>FSc</h3>
+          <p class="where">Forman Christian College (FCC), Lahore</p>
+        </div>
+        <p class="when">2020 – 2022</p>
+      </div>
+
+      <h2>Technical Skills</h2>
+      <div class="skills">
+        <p class="skill">
+          <strong>Frontend</strong>
+          React, Next.js, Tailwind CSS, HTML, CSS
+        </p>
+        <p class="skill">
+          <strong>Backend</strong>
+          Python, Django, FastAPI, Flask, Node.js, Express
+        </p>
+        <p class="skill">
+          <strong>Databases</strong>
+          PostgreSQL, MongoDB, MySQL
+        </p>
+        <p class="skill">
+          <strong>Tools</strong>
+          Git, Docker, AWS, Postman
+        </p>
+      </div>
+
+      <h2>Selected Projects</h2>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>E-Commerce Platform</h3>
+          <span class="kind">Full stack</span>
+        </div>
+        <p class="tech">Next.js · Node.js · MongoDB</p>
+        <ul>
+          <li>Built a storefront where shoppers can browse products, manage a cart, and check out.</li>
+          <li>Connected the interface to a Node.js API, with MongoDB holding the product catalog.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>RESTful API Service</h3>
+          <span class="kind">Python backend</span>
+        </div>
+        <p class="tech">Python · FastAPI · PostgreSQL · Docker</p>
+        <ul>
+          <li>Designed FastAPI routes for creating and querying resources.</li>
+          <li>Stored records in PostgreSQL and packaged the service with Docker for local runs.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3>Data Scraper &amp; Dashboard</h3>
+          <span class="kind">Python utility</span>
+        </div>
+        <p class="tech">Python · BeautifulSoup · React</p>
+        <ul>
+          <li>Collected public page data in Python with BeautifulSoup.</li>
+          <li>Showed the collected results in a React dashboard.</li>
+        </ul>
+      </article>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+:HL["/muhammad-shayan-khan-portfolio/_next/static/chunks/3u6caik7luas8.css","style"]
+2:[["children",{"s":"__PAGE__","h":160}]]
+1:[["children",{"s":"/_not-found","h":96,"c":"$Q2"}]]
+0:{"b":"dY4Xk8Xi02rwHh1-2crQD","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

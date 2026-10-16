@@ -27,10 +27,17 @@
       header {
         display: flex;
         justify-content: space-between;
-        gap: 16px;
-        align-items: flex-end;
+        gap: 14px;
+        align-items: center;
         border-bottom: 2.5px solid #0f6e64;
         padding-bottom: 12px;
+      }
+      .photo {
+        width: 28mm;
+        height: 34mm;
+        object-fit: cover;
+        object-position: center 18%;
+        border-radius: 3px;
       }
       h1 {
         margin: 0;
@@ -150,7 +157,8 @@
   <body>
     <main class="page">
       <header>
-        <div>
+        <img class="photo" src="shayan.jpg" alt="Muhammad Shayan Khan" />
+        <div style="flex: 1">
           <h1>Muhammad Shayan Khan</h1>
           <p class="role">Full Stack Developer | Python Enthusiast</p>
         </div>

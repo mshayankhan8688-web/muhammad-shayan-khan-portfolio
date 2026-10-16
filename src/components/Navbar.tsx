@@ -8,6 +8,7 @@ import { useTheme } from "@/components/ThemeProvider";
 const links = [
   { href: `${basePath}/#home`, label: "Home" },
   { href: `${basePath}/#about`, label: "About" },
+  { href: `${basePath}/#education`, label: "Education" },
   { href: `${basePath}/#skills`, label: "Skills" },
   { href: `${basePath}/#projects`, label: "Projects" },
   { href: `${basePath}/#contact`, label: "Contact" },

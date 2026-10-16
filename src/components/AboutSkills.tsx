@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
+import { basePath } from "@/lib/site";
 import type { IconType } from "react-icons";
 import { FaAws } from "react-icons/fa";
 import {
@@ -80,6 +81,40 @@ export function AboutSkills() {
           the frontend, and robust backends with Python (Django/FastAPI) and Node.js.
         </p>
       </motion.div>
+
+      <div id="education" className="mt-14 grid scroll-mt-28 items-center gap-8 sm:grid-cols-[200px_minmax(0,1fr)]">
+        <img
+          src={`${basePath}/shayan.jpg`}
+          alt="Muhammad Shayan Khan"
+          width={340}
+          height={420}
+          className="mx-auto aspect-[4/5] w-full max-w-[200px] rounded-3xl object-cover object-top"
+        />
+        <div>
+          <p className="text-sm font-medium tracking-[0.18em] text-pine uppercase">Education</p>
+          <h2 className="mt-3 font-display text-4xl tracking-tight">Education</h2>
+          <div className="mt-6 grid gap-4">
+            <article className="rounded-3xl border border-ink/10 bg-white/60 p-5 dark:border-white/10 dark:bg-white/5">
+              <div className="flex flex-wrap items-baseline justify-between gap-2">
+                <h3 className="font-display text-2xl">Bachelor&apos;s Degree</h3>
+                <p className="text-sm font-medium text-pine">2022–2026</p>
+              </div>
+              <p className="mt-1 text-sm text-ink/75 dark:text-paper/75">
+                University of Management and Technology (UMT), Lahore
+              </p>
+            </article>
+            <article className="rounded-3xl border border-ink/10 bg-white/60 p-5 dark:border-white/10 dark:bg-white/5">
+              <div className="flex flex-wrap items-baseline justify-between gap-2">
+                <h3 className="font-display text-2xl">FSc</h3>
+                <p className="text-sm font-medium text-pine">2020–2022</p>
+              </div>
+              <p className="mt-1 text-sm text-ink/75 dark:text-paper/75">
+                Forman Christian College (FCC), Lahore
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
 
       <div id="skills" className="mt-12 scroll-mt-28">
         <h2 className="font-display text-3xl tracking-tight">Skills</h2>

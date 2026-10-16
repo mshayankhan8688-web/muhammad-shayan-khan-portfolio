@@ -45,9 +45,9 @@ export function Hero() {
       <img
         src={`${basePath}/shayan.jpg`}
         alt={site.name}
-        width={450}
-        height={760}
-        className="order-1 mx-auto w-full max-w-[280px] rounded-[2rem] object-cover shadow-[0_18px_40px_rgba(20,24,22,0.16)] lg:order-2 lg:max-w-none"
+        width={340}
+        height={420}
+        className="order-1 mx-auto aspect-[4/5] w-full max-w-[240px] rounded-[2rem] object-cover object-top shadow-[0_18px_40px_rgba(20,24,22,0.16)] lg:order-2"
       />
     </section>
   );

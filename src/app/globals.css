@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --font-sans: var(--font-outfit), "Segoe UI", sans-serif;
+  --font-display: var(--font-fraunces), Georgia, serif;
+  --color-paper: #f4f1ea;
+  --color-ink: #141816;
+  --color-pine: #0f6e64;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-paper);
+  background-image: radial-gradient(
+      ellipse 80% 50% at 8% -10%,
+      color-mix(in srgb, var(--color-pine) 16%, transparent),
+      transparent
+    ),
+    radial-gradient(ellipse 55% 40% at 100% 0%, color-mix(in srgb, #c4a574 20%, transparent), transparent);
+  color: var(--color-ink);
+}
+
+html.dark body {
+  background-color: #0c0f0e;
+  background-image: radial-gradient(
+      ellipse 80% 50% at 8% -10%,
+      color-mix(in srgb, var(--color-pine) 32%, transparent),
+      transparent
+    ),
+    radial-gradient(ellipse 50% 40% at 100% 0%, color-mix(in srgb, #1c3a36 70%, transparent), transparent);
+  color: #f4f1ea;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-pine) 28%, transparent);
+}

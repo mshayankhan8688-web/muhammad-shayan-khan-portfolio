@@ -1,0 +1,24 @@
+Muhammad Shayan Khan
+Full Stack Developer | Python Enthusiast
+
+I build scalable web applications using React and Next.js on the frontend, and robust backends with Python (Django/FastAPI) and Node.js.
+
+Education
+Bachelor's Degree — University of Management and Technology (UMT), Lahore — 2022–2026
+FSc — Forman Christian College (FCC), Lahore — 2020–2022
+
+Skills
+Frontend: React, Next.js, Tailwind CSS, HTML/CSS
+Backend: Python (Django, FastAPI, Flask), Node.js, Express
+Database: PostgreSQL, MongoDB, MySQL
+Tools: Git, Docker, AWS, Postman
+
+Projects
+E-Commerce Platform — Next.js, Node.js, MongoDB
+RESTful API Service — Python, FastAPI, PostgreSQL, Docker
+Data Scraper & Dashboard — Python, BeautifulSoup, React
+
+Contact
+Email: mshayankhan8688@gmail.com
+LinkedIn: https://www.linkedin.com/in/muhammad-shayan-khan-979317393
+GitHub: https://github.com/mshayankhan8688-web

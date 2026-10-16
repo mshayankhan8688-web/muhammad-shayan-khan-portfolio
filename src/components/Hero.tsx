@@ -2,18 +2,18 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import { LuArrowDown, LuDownload } from "react-icons/lu";
-import { basePath, site } from "@/lib/site";
+import { site } from "@/lib/site";
 
 export function Hero() {
   const reduce = useReducedMotion();
 
   return (
-    <section id="home" className="mx-auto grid max-w-6xl scroll-mt-24 items-center gap-10 px-6 pt-16 pb-24 sm:pt-24 lg:grid-cols-[minmax(0,1fr)_300px]">
+    <section id="home" className="mx-auto flex max-w-6xl scroll-mt-24 flex-col justify-start px-6 pt-16 pb-24 sm:pt-24">
       <motion.div
         initial={reduce ? false : { opacity: 1, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className="order-2 max-w-3xl lg:order-1"
+        className="max-w-3xl"
       >
         <p className="text-sm font-medium tracking-[0.18em] text-pine uppercase">Portfolio</p>
         <h1 className="mt-4 font-display text-5xl leading-[1.05] tracking-tight text-balance text-ink sm:text-7xl dark:text-paper">
@@ -42,13 +42,6 @@ export function Hero() {
           </a>
         </div>
       </motion.div>
-      <img
-        src={`${basePath}/shayan.jpg`}
-        alt={site.name}
-        width={340}
-        height={420}
-        className="order-1 mx-auto aspect-[4/5] w-full max-w-[240px] rounded-[2rem] object-cover object-top shadow-[0_18px_40px_rgba(20,24,22,0.16)] lg:order-2"
-      />
     </section>
   );
 }

@@ -2,15 +2,15 @@
 
 import { useState } from "react";
 import { LuMenu, LuMoon, LuSun, LuX } from "react-icons/lu";
-import { site } from "@/lib/site";
+import { basePath, site } from "@/lib/site";
 import { useTheme } from "@/components/ThemeProvider";
 
 const links = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#projects", label: "Projects" },
-  { href: "#contact", label: "Contact" },
+  { href: `${basePath}/#home`, label: "Home" },
+  { href: `${basePath}/#about`, label: "About" },
+  { href: `${basePath}/#skills`, label: "Skills" },
+  { href: `${basePath}/#projects`, label: "Projects" },
+  { href: `${basePath}/#contact`, label: "Contact" },
 ];
 
 export function Navbar() {
@@ -20,7 +20,7 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-ink/10 bg-paper/70 backdrop-blur-xl dark:border-white/10 dark:bg-[#0c0f0e]/70">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-6">
-        <a href="#home" className="font-display text-lg tracking-tight">
+        <a href={`${basePath}/#home`} className="font-display text-lg tracking-tight">
           <span className="sm:hidden">MSK</span>
           <span className="hidden sm:inline">{site.name}</span>
         </a>

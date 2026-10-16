@@ -1,3 +1,5 @@
+export const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export const site = {
   name: "Muhammad Shayan Khan",
   role: "Full Stack Developer | Python Enthusiast",
@@ -6,7 +8,7 @@ export const site = {
   email: "mshayankhan8688@gmail.com",
   linkedin: "https://www.linkedin.com/in/muhammad-shayan-khan-979317393",
   github: "https://github.com/mshayankhan8688-web",
-  resumePath: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/Muhammad-Shayan-Khan-CV.pdf`,
+  resumePath: `${basePath}/Muhammad-Shayan-Khan-CV.pdf`,
 };
 
 export const projects = [
@@ -17,7 +19,7 @@ export const projects = [
     tech: ["Next.js", "Node.js", "MongoDB"],
     gradient: "from-teal-500 via-cyan-700 to-slate-900",
     githubUrl: "https://github.com/mshayankhan8688-web",
-    demoUrl: "https://github.com/mshayankhan8688-web",
+    demoUrl: `${basePath}/demos/store`,
   },
   {
     title: "RESTful API Service",
@@ -26,7 +28,7 @@ export const projects = [
     tech: ["Python", "FastAPI", "PostgreSQL", "Docker"],
     gradient: "from-amber-400 via-orange-600 to-stone-900",
     githubUrl: "https://github.com/mshayankhan8688-web",
-    demoUrl: "https://github.com/mshayankhan8688-web",
+    demoUrl: `${basePath}/demos/api`,
   },
   {
     title: "Data Scraper & Dashboard",
@@ -35,6 +37,6 @@ export const projects = [
     tech: ["Python", "BeautifulSoup", "React"],
     gradient: "from-indigo-500 via-blue-700 to-slate-900",
     githubUrl: "https://github.com/mshayankhan8688-web",
-    demoUrl: "https://github.com/mshayankhan8688-web",
+    demoUrl: `${basePath}/demos/dashboard`,
   },
 ] as const;

@@ -42,4 +42,33 @@ export const projects = [
       "https://github.com/mshayankhan8688-web/muhammad-shayan-khan-portfolio/blob/main/src/components/demos/DashboardDemo.tsx",
     demoUrl: `${basePath}/demos/dashboard`,
   },
+  {
+    title: "Savory Bites POS",
+    description:
+      "A React point-of-sale app for a restaurant, with a menu, cart, kitchen display, and dashboard. This is the live FYP site.",
+    tech: ["React", "TypeScript", "Vite", "Tailwind"],
+    gradient: "from-rose-500 via-orange-700 to-stone-900",
+    githubUrl: "https://github.com/mshayankhan8688-web/smart-ai-cloud-restaurant-fyp",
+    demoUrl: "https://smart-ai-cloud-restaurant-fyp.vercel.app",
+  },
+  {
+    title: "Restaurant Orders API",
+    description:
+      "Express routes and MongoDB models for menu, orders, staff, inventory, and analytics in the same restaurant FYP.",
+    tech: ["Node.js", "Express", "MongoDB"],
+    gradient: "from-emerald-500 via-green-800 to-slate-900",
+    githubUrl:
+      "https://github.com/mshayankhan8688-web/smart-ai-cloud-restaurant-fyp/tree/main/restaurant-pos/backend",
+    demoUrl: "https://smart-ai-cloud-restaurant-fyp.vercel.app",
+  },
+  {
+    title: "Restaurant Analytics",
+    description:
+      "A Django service in the restaurant FYP, with routes for sales forecast, waste and revenue, sentiment, and chat.",
+    tech: ["Python", "Django", "pandas"],
+    gradient: "from-violet-500 via-purple-800 to-slate-900",
+    githubUrl:
+      "https://github.com/mshayankhan8688-web/smart-ai-cloud-restaurant-fyp/tree/main/restaurant-pos/ai-backend",
+    demoUrl: "https://smart-ai-cloud-restaurant-fyp.vercel.app",
+  },
 ] as const;

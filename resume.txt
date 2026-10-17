@@ -17,6 +17,9 @@ Projects
 E-Commerce Platform — Next.js, React, TypeScript. Storefront demo with cart and on-page checkout.
 RESTful API Service — Next.js, React, TypeScript. API console demo that shows a JSON response.
 Data Scraper & Dashboard — Next.js, React, TypeScript. Dashboard demo with sample results and search.
+Savory Bites POS — React, TypeScript, Vite, Tailwind. Restaurant point-of-sale app with menu, cart, kitchen display, and dashboard.
+Restaurant Orders API — Node.js, Express, MongoDB. Routes for menu, orders, staff, and inventory.
+Restaurant Analytics — Python, Django, pandas. Routes for forecast, waste and revenue, sentiment, and chat.
 
 Contact
 Email: mshayankhan8688@gmail.com

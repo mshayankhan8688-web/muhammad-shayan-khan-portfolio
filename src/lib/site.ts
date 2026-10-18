@@ -43,9 +43,9 @@ export const projects = [
     demoUrl: `${basePath}/demos/dashboard`,
   },
   {
-    title: "Savory Bites POS",
+    title: "AI Driven Restaurant Management System",
     description:
-      "A React point-of-sale app for a restaurant, with a menu, cart, kitchen display, and dashboard. This is the live FYP site.",
+      "Final year project. A React app for a restaurant, with a menu, cart, kitchen display, and dashboard. This is the live site.",
     tech: ["React", "TypeScript", "Vite", "Tailwind"],
     gradient: "from-rose-500 via-orange-700 to-stone-900",
     githubUrl: "https://github.com/mshayankhan8688-web/smart-ai-cloud-restaurant-fyp",
@@ -54,7 +54,7 @@ export const projects = [
   {
     title: "Restaurant Orders API",
     description:
-      "Express routes and MongoDB models for menu, orders, staff, inventory, and analytics in the same restaurant FYP.",
+      "Express routes and MongoDB models for menu, orders, staff, and inventory in the AI Driven Restaurant Management System.",
     tech: ["Node.js", "Express", "MongoDB"],
     gradient: "from-emerald-500 via-green-800 to-slate-900",
     githubUrl:
@@ -64,7 +64,7 @@ export const projects = [
   {
     title: "Restaurant Analytics",
     description:
-      "A Django service in the restaurant FYP, with routes for sales forecast, waste and revenue, sentiment, and chat.",
+      "A Django service in the AI Driven Restaurant Management System, with routes for sales forecast, waste and revenue, sentiment, and chat.",
     tech: ["Python", "Django", "pandas"],
     gradient: "from-violet-500 via-purple-800 to-slate-900",
     githubUrl:

@@ -5,35 +5,30 @@ import type { IconType } from "react-icons";
 import {
   SiCss,
   SiDjango,
-  SiDocker,
   SiExpress,
-  SiFastapi,
-  SiFlask,
   SiGit,
   SiGithub,
   SiHtml5,
   SiJavascript,
   SiMongodb,
-  SiMysql,
   SiNextdotjs,
   SiNodedotjs,
-  SiPostgresql,
-  SiPostman,
   SiPython,
   SiReact,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
-import { FaAws } from "react-icons/fa";
 
 const groups: {
   title: string;
   note: string;
+  wide?: boolean;
   items: { name: string; icons: IconType[] }[];
 }[] = [
   {
     title: "Frontend",
-    note: "Used in projects",
+    note: "Used to build this portfolio and the demos",
+    wide: true,
     items: [
       { name: "HTML and CSS", icons: [SiHtml5, SiCss] },
       { name: "JavaScript", icons: [SiJavascript] },
@@ -45,7 +40,7 @@ const groups: {
   },
   {
     title: "Backend",
-    note: "Used in the restaurant project",
+    note: "Present in the restaurant repository",
     items: [
       { name: "Node.js", icons: [SiNodedotjs] },
       { name: "Express", icons: [SiExpress] },
@@ -55,28 +50,15 @@ const groups: {
   },
   {
     title: "Database",
-    note: "Used in the restaurant project",
+    note: "Present in the restaurant repository",
     items: [{ name: "MongoDB", icons: [SiMongodb] }],
   },
   {
     title: "Tools",
-    note: "Used day to day",
+    note: "Used for this work",
     items: [
       { name: "Git", icons: [SiGit] },
       { name: "GitHub", icons: [SiGithub] },
-    ],
-  },
-  {
-    title: "Learning",
-    note: "Studied, not shipped as my own product",
-    items: [
-      { name: "FastAPI", icons: [SiFastapi] },
-      { name: "Flask", icons: [SiFlask] },
-      { name: "PostgreSQL", icons: [SiPostgresql] },
-      { name: "MySQL", icons: [SiMysql] },
-      { name: "Docker", icons: [SiDocker] },
-      { name: "AWS", icons: [FaAws] },
-      { name: "Postman", icons: [SiPostman] },
     ],
   },
 ];
@@ -130,15 +112,19 @@ export function AboutSkills() {
 
       <div id="skills" className="mt-12 scroll-mt-28">
         <h2 className="font-display text-3xl tracking-tight">Skills</h2>
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+        <p className="mt-3 max-w-2xl text-sm leading-relaxed text-ink/75 dark:text-paper/75">
+          Frontend is the work I can show in the browser. Node.js, Express, MongoDB, Python, and Django
+          appear in the restaurant repository. They are not a separate live service.
+        </p>
+        <div className="mt-6 grid gap-4 sm:grid-cols-2">
         {groups.map((group) => (
           <article
             key={group.title}
-            className="rounded-3xl border border-ink/10 bg-white/60 p-5 dark:border-white/10 dark:bg-white/5"
+            className={`rounded-3xl border border-ink/10 bg-white/60 p-5 dark:border-white/10 dark:bg-white/5 ${group.wide ? "sm:col-span-2" : ""}`}
           >
             <h3 className="font-display text-2xl">{group.title}</h3>
-            <p className="mt-1 text-xs tracking-wide text-ink/55 uppercase dark:text-paper/55">{group.note}</p>
-            <ul className="mt-4 grid gap-2">
+            <p className="mt-1 text-sm text-ink/70 dark:text-paper/70">{group.note}</p>
+            <ul className={`mt-4 grid gap-2 ${group.wide ? "sm:grid-cols-2" : ""}`}>
               {group.items.map((item) => (
                 <motion.li
                   key={item.name}

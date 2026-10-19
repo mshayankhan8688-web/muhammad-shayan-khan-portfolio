@@ -12,7 +12,7 @@ export function DemoFrame({
   children: ReactNode;
 }) {
   return (
-    <main className="mx-auto max-w-6xl px-6 py-10">
+    <main id="content" className="mx-auto max-w-6xl px-6 py-10">
       <a
         href={`${basePath}/#projects`}
         className="inline-flex items-center gap-2 text-sm text-ink/70 transition hover:text-pine dark:text-paper/70"

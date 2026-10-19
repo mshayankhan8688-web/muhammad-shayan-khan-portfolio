@@ -45,3 +45,24 @@ html.dark body {
 ::selection {
   background: color-mix(in srgb, var(--color-pine) 28%, transparent);
 }
+
+:focus-visible {
+  outline: 2px solid var(--color-pine);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 80;
+  border-radius: 999px;
+  background: var(--color-pine);
+  color: var(--color-paper);
+  padding: 0.7rem 1rem;
+  font-size: 0.875rem;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}

@@ -3,12 +3,12 @@ import { DemoFrame } from "@/components/demos/DemoFrame";
 import { StoreDemo } from "@/components/demos/StoreDemo";
 
 export const metadata: Metadata = {
-  title: "E-Commerce Platform Demo | Muhammad Shayan Khan",
+  title: "Storefront Demo | Muhammad Shayan Khan",
 };
 
 export default function StoreDemoPage() {
   return (
-    <DemoFrame kicker="Live demo" title="E-Commerce Platform">
+    <DemoFrame kicker="Frontend demo" title="Storefront Demo">
       <StoreDemo />
     </DemoFrame>
   );

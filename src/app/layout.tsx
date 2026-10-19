@@ -29,6 +29,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <body className="font-sans antialiased">
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
         <ThemeProvider>
+          <a href="#content" className="skip-link">
+            Skip to content
+          </a>
           <Navbar />
           {children}
         </ThemeProvider>

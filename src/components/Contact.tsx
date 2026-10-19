@@ -8,21 +8,20 @@ const fieldClass =
   "w-full rounded-2xl border border-ink/10 bg-white/80 px-4 py-3 text-sm outline-none transition placeholder:text-ink/40 focus:border-pine dark:border-white/15 dark:bg-white/5 dark:placeholder:text-paper/40";
 
 export function Contact() {
-  const [sent, setSent] = useState(false);
+  const [opened, setOpened] = useState(false);
 
   function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
     if (!form.reportValidity()) return;
     const data = new FormData(form);
-    const name = String(data.get("name") ?? "");
-    const email = String(data.get("email") ?? "");
-    const message = String(data.get("message") ?? "");
+    const name = String(data.get("name") ?? "").trim();
+    const email = String(data.get("email") ?? "").trim();
+    const message = String(data.get("message") ?? "").trim();
     const subject = encodeURIComponent(`Portfolio message from ${name}`);
     const body = encodeURIComponent(`${message}\n\nFrom: ${name} <${email}>`);
     window.location.href = `mailto:${site.email}?subject=${subject}&body=${body}`;
-    setSent(true);
-    form.reset();
+    setOpened(true);
   }
 
   return (
@@ -34,27 +33,31 @@ export function Contact() {
           onSubmit={onSubmit}
           className="grid gap-4 rounded-3xl border border-ink/10 bg-white/60 p-5 sm:p-6 dark:border-white/10 dark:bg-white/5"
         >
-          <label className="grid gap-2 text-sm">
+          <label htmlFor="contact-name" className="grid gap-2 text-sm">
             Name
-            <input name="name" required autoComplete="name" className={fieldClass} />
+            <input id="contact-name" name="name" required autoComplete="name" className={fieldClass} />
           </label>
-          <label className="grid gap-2 text-sm">
+          <label htmlFor="contact-email" className="grid gap-2 text-sm">
             Email
-            <input name="email" type="email" required autoComplete="email" className={fieldClass} />
+            <input id="contact-email" name="email" type="email" required autoComplete="email" className={fieldClass} />
           </label>
-          <label className="grid gap-2 text-sm">
+          <label htmlFor="contact-message" className="grid gap-2 text-sm">
             Message
-            <textarea name="message" required rows={5} className={fieldClass} />
+            <textarea id="contact-message" name="message" required rows={5} className={fieldClass} />
           </label>
+          <p id="contact-note" className="text-sm leading-relaxed text-ink/70 dark:text-paper/70">
+            This opens your email app with the message filled in. The website does not send or store it.
+          </p>
           <button
             type="submit"
-            className="inline-flex w-fit items-center rounded-full bg-pine px-6 py-3 text-sm font-medium text-paper transition hover:bg-pine/90"
+            aria-describedby="contact-note"
+            className="inline-flex w-full items-center justify-center rounded-full bg-pine px-6 py-3 text-sm font-medium text-paper transition hover:bg-pine/90 sm:w-fit"
           >
-            Send Message
+            Open email draft
           </button>
-          {sent ? (
+          {opened ? (
             <p role="status" className="text-sm text-pine">
-              Thanks. Your message is noted on this page.
+              Your email app should be open. If it is not, write to {site.email}. Nothing was sent by this website.
             </p>
           ) : null}
         </form>

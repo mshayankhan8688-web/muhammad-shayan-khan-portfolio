@@ -7,7 +7,7 @@ import { Projects } from "@/components/Projects";
 export default function HomePage() {
   return (
     <>
-      <main>
+      <main id="content">
         <Hero />
         <AboutSkills />
         <Projects />

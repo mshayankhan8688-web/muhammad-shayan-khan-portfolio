@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { LuMenu, LuMoon, LuSun, LuX } from "react-icons/lu";
 import { basePath, site } from "@/lib/site";
 import { useTheme } from "@/components/ThemeProvider";
@@ -17,6 +17,15 @@ const links = [
 export function Navbar() {
   const { theme, toggleTheme } = useTheme();
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    if (!open) return;
+    function onKey(event: KeyboardEvent) {
+      if (event.key === "Escape") setOpen(false);
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open]);
 
   return (
     <header className="sticky top-0 z-50 border-b border-ink/10 bg-paper/70 backdrop-blur-xl dark:border-white/10 dark:bg-[#0c0f0e]/70">

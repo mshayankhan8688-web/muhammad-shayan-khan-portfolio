@@ -23,6 +23,7 @@ export function ProjectCard({
   demoUrl,
 }: ProjectCardProps) {
   const reduce = useReducedMotion();
+  const externalDemo = demoUrl.startsWith("http");
 
   return (
     <motion.article
@@ -60,11 +61,10 @@ export function ProjectCard({
           </a>
           <a
             href={demoUrl}
-            target="_blank"
-            rel="noreferrer"
+            {...(externalDemo ? { target: "_blank", rel: "noreferrer" } : {})}
             className="inline-flex items-center gap-2 rounded-full bg-pine px-4 py-2 text-sm text-paper transition hover:bg-pine/90"
           >
-            Live Demo
+            {externalDemo ? "Live site" : "Open demo"}
             <LuArrowUpRight aria-hidden />
           </a>
         </div>

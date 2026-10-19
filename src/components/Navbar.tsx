@@ -19,12 +19,16 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
     if (!open) return;
     function onKey(event: KeyboardEvent) {
       if (event.key === "Escape") setOpen(false);
     }
     window.addEventListener("keydown", onKey);
-    return () => window.removeEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", onKey);
+    };
   }, [open]);
 
   return (
@@ -76,7 +80,7 @@ export function Navbar() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="block rounded-xl px-3 py-3 text-sm hover:bg-pine/10"
+                  className="block rounded-xl px-3 py-3 text-base hover:bg-pine/10"
                   onClick={() => setOpen(false)}
                 >
                   {link.label}

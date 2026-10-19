@@ -17,6 +17,9 @@ export function Projects() {
       >
         <p className="text-sm font-medium tracking-[0.18em] text-pine uppercase">Work</p>
         <h2 className="mt-3 font-display text-4xl tracking-tight sm:text-5xl">Featured Projects</h2>
+        <p className="mt-4 max-w-2xl text-ink/75 dark:text-paper/75">
+          The restaurant system is my final year project. The other three pages are frontend demos on this site.
+        </p>
       </motion.div>
       <div className="mt-10 grid gap-5 md:grid-cols-2">
         {projects.map((project) => (

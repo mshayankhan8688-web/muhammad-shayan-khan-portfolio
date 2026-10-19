@@ -9,15 +9,30 @@ const fieldClass =
 
 export function Contact() {
   const [opened, setOpened] = useState(false);
+  const [error, setError] = useState("");
+  const [invalid, setInvalid] = useState({ name: false, email: false, message: false });
 
   function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     const form = event.currentTarget;
-    if (!form.reportValidity()) return;
+    setOpened(false);
     const data = new FormData(form);
     const name = String(data.get("name") ?? "").trim();
     const email = String(data.get("email") ?? "").trim();
     const message = String(data.get("message") ?? "").trim();
+    const nextInvalid = {
+      name: name.length < 2,
+      email: !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email),
+      message: message.length < 10,
+    };
+    if (!form.checkValidity() || nextInvalid.name || nextInvalid.email || nextInvalid.message) {
+      form.reportValidity();
+      setInvalid(nextInvalid);
+      setError("Enter your name, a valid email address, and a message of at least 10 characters.");
+      return;
+    }
+    setInvalid({ name: false, email: false, message: false });
+    setError("");
     const subject = encodeURIComponent(`Portfolio message from ${name}`);
     const body = encodeURIComponent(`${message}\n\nFrom: ${name} <${email}>`);
     window.location.href = `mailto:${site.email}?subject=${subject}&body=${body}`;
@@ -35,19 +50,52 @@ export function Contact() {
         >
           <label htmlFor="contact-name" className="grid gap-2 text-sm">
             Name
-            <input id="contact-name" name="name" required autoComplete="name" className={fieldClass} />
+            <input
+              id="contact-name"
+              name="name"
+              required
+              minLength={2}
+              maxLength={80}
+              autoComplete="name"
+              aria-invalid={invalid.name || undefined}
+              className={fieldClass}
+            />
           </label>
           <label htmlFor="contact-email" className="grid gap-2 text-sm">
             Email
-            <input id="contact-email" name="email" type="email" required autoComplete="email" className={fieldClass} />
+            <input
+              id="contact-email"
+              name="email"
+              type="email"
+              required
+              maxLength={120}
+              autoComplete="email"
+              aria-invalid={invalid.email || undefined}
+              className={fieldClass}
+            />
           </label>
           <label htmlFor="contact-message" className="grid gap-2 text-sm">
             Message
-            <textarea id="contact-message" name="message" required rows={5} className={fieldClass} />
+            <textarea
+              id="contact-message"
+              name="message"
+              required
+              minLength={10}
+              maxLength={2000}
+              rows={5}
+              aria-invalid={invalid.message || undefined}
+              className={fieldClass}
+            />
           </label>
           <p id="contact-note" className="text-sm leading-relaxed text-ink/70 dark:text-paper/70">
-            This opens your email app with the message filled in. The website does not send or store it.
+            This opens your email app with the message filled in. No email service is configured on this
+            website, so it does not send or store the message.
           </p>
+          {error ? (
+            <p role="alert" className="text-sm text-red-700 dark:text-red-300">
+              {error}
+            </p>
+          ) : null}
           <button
             type="submit"
             aria-describedby="contact-note"

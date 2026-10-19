@@ -12,9 +12,23 @@ export const site = {
   resumePath: `${basePath}/Muhammad-Shayan-Khan-CV.pdf`,
 };
 
+export const education = [
+  {
+    credential: "Bachelor's Degree",
+    school: "University of Management and Technology (UMT), Lahore",
+    years: "2022–2026",
+  },
+  {
+    credential: "FSc",
+    school: "Forman Christian College (FCC), Lahore",
+    years: "2020–2022",
+  },
+] as const;
+
 export const projects = [
   {
     title: "AI Driven Restaurant Management System",
+    label: "Final year project",
     description:
       "Final year project for running a restaurant from one app: menu, cart, kitchen display, and dashboard.",
     detail:
@@ -26,6 +40,7 @@ export const projects = [
   },
   {
     title: "Storefront Demo",
+    label: "Frontend demo",
     description:
       "A responsive store page where a shopper can browse products, add them to a cart, and confirm checkout.",
     detail:
@@ -38,6 +53,7 @@ export const projects = [
   },
   {
     title: "API Console Demo",
+    label: "Frontend demo",
     description:
       "A page that sends a sample request and shows the JSON response in the browser.",
     detail: "This is a frontend console. It is not a deployed REST API or a database.",
@@ -49,6 +65,7 @@ export const projects = [
   },
   {
     title: "Dashboard Demo",
+    label: "Frontend demo",
     description:
       "A page of sample results with search and a simple bar view.",
     detail: "The rows are sample data on the page. This demo does not scrape websites.",

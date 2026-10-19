@@ -2,7 +2,7 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import { LuArrowDown, LuDownload, LuGithub, LuLinkedin, LuMail } from "react-icons/lu";
-import { site } from "@/lib/site";
+import { education, site } from "@/lib/site";
 
 export function Hero() {
   const reduce = useReducedMotion();
@@ -13,10 +13,11 @@ export function Hero() {
         initial={reduce ? false : { opacity: 1, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className="max-w-3xl"
+        className="grid items-start gap-10 lg:grid-cols-[minmax(0,1fr)_18rem]"
       >
+        <div>
         <p className="text-sm font-medium tracking-[0.18em] text-pine uppercase">Portfolio</p>
-        <h1 className="mt-4 font-display text-5xl leading-[1.05] tracking-tight text-balance text-ink sm:text-7xl dark:text-paper">
+        <h1 className="mt-4 font-display text-4xl leading-[1.05] tracking-tight text-balance text-ink sm:text-6xl lg:text-7xl dark:text-paper">
           Hi, I&apos;m <span className="text-pine dark:text-[#8fd9cf]">{site.name}</span>
         </h1>
         <p className="mt-5 text-lg text-ink/80 sm:text-xl dark:text-paper/80">{site.role}</p>
@@ -67,6 +68,21 @@ export function Hero() {
             <LuLinkedin aria-hidden />
           </a>
         </div>
+        </div>
+        <aside className="rounded-3xl border border-ink/10 bg-white/70 p-5 dark:border-white/10 dark:bg-white/5">
+          <h2 className="text-sm font-medium tracking-[0.18em] text-pine uppercase">At a glance</h2>
+          <dl className="mt-4 grid gap-4">
+            {education.map((item) => (
+              <div key={item.credential}>
+                <dt className="text-sm font-medium">{item.credential}</dt>
+                <dd className="mt-1 text-sm leading-relaxed text-ink/75 dark:text-paper/75">
+                  {item.school}
+                  <span className="mt-1 block font-medium text-pine">{item.years}</span>
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </aside>
       </motion.div>
     </section>
   );

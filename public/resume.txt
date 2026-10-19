@@ -1,7 +1,7 @@
 Muhammad Shayan Khan
 Aspiring Software Engineer | Frontend Developer
 
-Software Engineering student focused on responsive web interfaces with React and Next.js. Backend skills are developing through a restaurant project that includes Express, MongoDB, and Django in the repository.
+Software Engineering student focused on responsive web interfaces with React and Next.js. The restaurant system is a final year project. The other portfolio pages are frontend demos. Backend code in the restaurant repository includes Express, MongoDB, and Django.
 
 Education
 Bachelor's Degree — University of Management and Technology (UMT), Lahore — 2022–2026

@@ -6,6 +6,7 @@ import { LuArrowUpRight, LuGithub } from "react-icons/lu";
 export type ProjectCardProps = {
   title: string;
   description: string;
+  detail: string;
   tech: readonly string[];
   gradient: string;
   githubUrl: string;
@@ -15,6 +16,7 @@ export type ProjectCardProps = {
 export function ProjectCard({
   title,
   description,
+  detail,
   tech,
   gradient,
   githubUrl,
@@ -34,9 +36,8 @@ export function ProjectCard({
       </div>
       <div className="flex flex-1 flex-col p-5">
         <h3 className="font-display text-2xl tracking-tight">{title}</h3>
-        <p className="mt-2 flex-1 text-sm leading-relaxed text-ink/70 dark:text-paper/70">
-          {description}
-        </p>
+        <p className="mt-2 text-sm leading-relaxed text-ink/70 dark:text-paper/70">{description}</p>
+        <p className="mt-2 flex-1 text-sm leading-relaxed text-ink/60 dark:text-paper/60">{detail}</p>
         <ul className="mt-4 flex flex-wrap gap-2">
           {tech.map((item) => (
             <li

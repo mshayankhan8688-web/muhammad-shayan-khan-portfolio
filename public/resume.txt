@@ -1,27 +1,27 @@
 Muhammad Shayan Khan
-Full Stack Developer | Python Enthusiast
+Aspiring Software Engineer | Frontend Developer
 
-I build scalable web applications using React and Next.js on the frontend, and robust backends with Python (Django/FastAPI) and Node.js.
+Software Engineering student focused on responsive web interfaces with React and Next.js. Backend skills are developing through a restaurant project that includes Express, MongoDB, and Django in the repository.
 
 Education
 Bachelor's Degree — University of Management and Technology (UMT), Lahore — 2022–2026
 FSc — Forman Christian College (FCC), Lahore — 2020–2022
 
 Skills
-Frontend: React, Next.js, Tailwind CSS, HTML/CSS
-Backend: Python (Django, FastAPI, Flask), Node.js, Express
-Database: PostgreSQL, MongoDB, MySQL
-Tools: Git, Docker, AWS, Postman
+Frontend: HTML, CSS, JavaScript, TypeScript, React, Next.js, Tailwind CSS
+Backend: Node.js, Express, Python, Django
+Database: MongoDB
+Tools: Git, GitHub
+Learning: FastAPI, Flask, PostgreSQL, MySQL, Docker, AWS, Postman
 
 Projects
-E-Commerce Platform — Next.js, React, TypeScript. Storefront demo with cart and on-page checkout.
-RESTful API Service — Next.js, React, TypeScript. API console demo that shows a JSON response.
-Data Scraper & Dashboard — Next.js, React, TypeScript. Dashboard demo with sample results and search.
-AI Driven Restaurant Management System — React, TypeScript, Vite, Tailwind. Final year project with menu, cart, kitchen display, and dashboard.
-Restaurant Orders API — Node.js, Express, MongoDB. Routes for menu, orders, staff, and inventory.
-Restaurant Analytics — Python, Django, pandas. Routes for forecast, waste and revenue, sentiment, and chat.
+AI Driven Restaurant Management System — React, TypeScript, Vite, Tailwind, Node.js, Express, MongoDB, Django. Final year project. Live demo is the React app. The repository also includes Express/MongoDB order routes and Django analytics routes.
+Storefront Demo — Next.js, React, TypeScript. Browse products and a cart. Checkout does not take payment.
+API Console Demo — Next.js, React, TypeScript. Sends a sample request and shows JSON. Not a deployed API.
+Dashboard Demo — Next.js, React, TypeScript. Sample results, search, and a bar view. Does not scrape websites.
 
 Contact
 Email: mshayankhan8688@gmail.com
+Portfolio: https://mshayankhan8688-web.github.io/muhammad-shayan-khan-portfolio/
 LinkedIn: https://www.linkedin.com/in/muhammad-shayan-khan-979317393
 GitHub: https://github.com/mshayankhan8688-web

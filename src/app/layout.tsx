@@ -16,9 +16,9 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Muhammad Shayan Khan | Full Stack Developer",
+  title: "Muhammad Shayan Khan | Aspiring Software Engineer",
   description:
-    "Portfolio of Muhammad Shayan Khan, a full stack developer and Python enthusiast.",
+    "Portfolio of Muhammad Shayan Khan, a Software Engineering student focused on frontend development and practical backend projects.",
 };
 
 const themeScript = `(function(){try{var t=localStorage.getItem("theme");if(t==="dark"||(!t&&window.matchMedia("(prefers-color-scheme: dark)").matches)){document.documentElement.classList.add("dark");}}catch(e){}})();`;

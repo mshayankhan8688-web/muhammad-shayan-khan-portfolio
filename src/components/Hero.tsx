@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { LuArrowDown, LuDownload } from "react-icons/lu";
+import { LuArrowDown, LuDownload, LuGithub, LuLinkedin, LuMail } from "react-icons/lu";
 import { site } from "@/lib/site";
 
 export function Hero() {
@@ -21,15 +21,14 @@ export function Hero() {
         </h1>
         <p className="mt-5 text-lg text-ink/80 sm:text-xl dark:text-paper/80">{site.role}</p>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-ink/70 sm:text-lg dark:text-paper/70">
-          I build scalable web applications using React and Next.js on the frontend,
-          <br className="hidden sm:block" /> and robust backends with Python (Django/FastAPI) and Node.js.
+          {site.summary}
         </p>
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           <a
             href="#projects"
             className="inline-flex items-center justify-center gap-2 rounded-full bg-pine px-6 py-3 text-sm font-medium text-paper transition hover:bg-pine/90"
           >
-            View My Work
+            View My Projects
             <LuArrowDown aria-hidden />
           </a>
           <a
@@ -37,8 +36,35 @@ export function Hero() {
             download="Muhammad-Shayan-Khan-CV.pdf"
             className="inline-flex items-center justify-center gap-2 rounded-full border border-ink/15 px-6 py-3 text-sm font-medium transition hover:border-pine hover:text-pine dark:border-white/20"
           >
-            Download Resume
+            Download My CV
             <LuDownload aria-hidden />
+          </a>
+          <a
+            href="#contact"
+            className="inline-flex items-center justify-center gap-2 rounded-full border border-ink/15 px-6 py-3 text-sm font-medium transition hover:border-pine hover:text-pine dark:border-white/20"
+          >
+            Contact Me
+            <LuMail aria-hidden />
+          </a>
+        </div>
+        <div className="mt-6 flex gap-3">
+          <a
+            href={site.github}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="GitHub"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-ink/15 transition hover:border-pine hover:text-pine dark:border-white/20"
+          >
+            <LuGithub aria-hidden />
+          </a>
+          <a
+            href={site.linkedin}
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn"
+            className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-ink/15 transition hover:border-pine hover:text-pine dark:border-white/20"
+          >
+            <LuLinkedin aria-hidden />
           </a>
         </div>
       </motion.div>

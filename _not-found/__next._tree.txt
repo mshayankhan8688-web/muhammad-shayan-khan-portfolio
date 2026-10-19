@@ -1,4 +1,4 @@
-:HL["/muhammad-shayan-khan-portfolio/_next/static/chunks/1guj5hnc5g7i_.css","style"]
+:HL["/muhammad-shayan-khan-portfolio/_next/static/chunks/2iy_hdb3ed4vw.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"/_not-found","h":96,"c":"$Q2"}]]
-0:{"b":"NjjH2lMJ07pnFgTCnLvLk","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"rKZSPk1I7Si4sY3nc5m59","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
